@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task 6 - Display Property</title>
+    <style>
+        
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #333;
+            background-color: #f5f5f5;
+        }
+
+        
+        .block-input {
+            display: block;
+            margin: 5px 0;
+            padding: 4px;
+            width: 200px;
+        }
+
+        
+        .inline-block-para {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            vertical-align: middle;
+        }
+        .inline-block-btn {
+            display: inline-block;
+            width: 60px;
+            padding: 5px;
+            vertical-align: middle;
+        }
+
+        
+        .google-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .google-logo {
+            width: 180px;
+            margin-bottom: 20px;
+            
+        }
+        .google-search {
+            width: 400px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+        }
+
+        
+        .signup-container {
+            background-color: #fff;
+            width: 320px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: 15px;
+        }
+        .signup-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .signup-input {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .signup-btn {
+            width: 100%;
+            padding: 8px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        
+        .uber-container {
+            background-color: #fff;
+            width: 320px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: 15px;
+        }
+        .uber-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .uber-input {
+            width: 100%;
+            padding: 7px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .uber-btn-group {
+            display: flex;
+            gap: 10px;
+        }
+        .uber-btn {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .uber-request {
+            background-color: black;
+            color: white;
+        }
+        .uber-schedule {
+            background-color: #f3f4f6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lab Task 6 Using Display Property</h1>
+    <h3>(Block Level, Inline-Block and Inline)</h3>
+
+    
+    <div class="section">
+        <h4>Block-level Text Boxes</h4>
+        <input type="text" class="block-input" placeholder="Name">
+        <input type="email" class="block-input" placeholder="Email">
+    </div>
+
+    
+    <div class="section">
+        <h4>Inline-block Elements</h4>
+        <p class="inline-block-para">Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
+        <button class="inline-block-btn">Yes</button>
+        <button class="inline-block-btn">No</button>
+    </div>
+
+    
+    <div class="section">
+        <h4>Google Search Form</h4>
+        <div class="google-container">
+            <img src="google.logo.png" alt="Google Logo" class="google-logo">
+            <input type="text" class="google-search" placeholder="Search Google or type a URL">
+        </div>
+    
+    </div>
+
+
+    <div class="section">
+        <h3>Challenge Exercise 8d: Sign Up Form</h3>
+        <div class="signup-container">
+            <div class="signup-row">
+                <input type="text" class="signup-input" placeholder="First name">
+                <input type="text" class="signup-input" placeholder="First name">
+            </div>
+            <input type="email" class="signup-input" placeholder="Email">
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </div>
+
+    
+    <div class="section">
+        <h3>Challenge Exercise 8e: Uber Request-a-Ride Form</h3>
+        <div class="uber-container">
+            <div class="uber-title">Request a ride now</div>
+            <input type="text" class="uber-input" placeholder="Enter pickup location">
+            <input type="text" class="uber-input" placeholder="Enter destination">
+            <div class="uber-btn-group">
+                <button class="uber-btn uber-request">Request now</button>
+                <button class="uber-btn uber-schedule">Schedule for later</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
